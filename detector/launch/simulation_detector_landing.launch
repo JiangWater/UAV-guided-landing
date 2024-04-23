@@ -1,0 +1,7 @@
+<launch>
+  <!--rosparam file="$(find detector)/config/param_landing.yaml"/-->
+  <rosparam file="$(find detector)/config/param_delay_landing.yaml"/>
+  <node pkg="detector" type="simulation_detector_landing" name="simulation_detector_landing" output="screen" launch-prefix="gdb -ex run --args">
+  <!--node pkg="detector" type="simulation_detector" name="simulation_detector_node" output="screen"-->
+  </node>
+</launch>

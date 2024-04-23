@@ -1,0 +1,5 @@
+<launch>
+  <rosparam file="$(find detector)/config/param_land.yaml"/>
+  <node pkg="detector" type="detector_vel" name="detector_vel" output="screen">
+  </node>
+</launch>

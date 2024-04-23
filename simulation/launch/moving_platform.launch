@@ -1,0 +1,42 @@
+<launch>
+  <!-- 启动Gazebo -->
+  <!-- Gazebo configs -->
+  <arg name="gui" default="true"/>
+  <arg name="debug" default="false"/>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="respawn_gazebo" default="false"/>
+
+  <!-- Gazebo sim -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="respawn_gazebo" value="$(arg respawn_gazebo)"/>
+    <!--arg name="world_name" value="$(arg world)"/-->
+  </include>
+
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="0.2"/>
+  <arg name="R" default="0.0"/>
+  <arg name="P" default="0.0"/>
+  <arg name="Y" default="0.0"/>
+  <arg name="sdf" default="/home/yx/model_editor_models/moving_platform/model.sdf"/>
+  <arg name="model" default="moving_platform"/>
+  <node name="spawn_sdf" pkg="gazebo_ros" type="spawn_model" output="screen" 
+		args="-sdf -file $(arg sdf) -model $(arg model) -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)">
+  </node>
+
+
+  <!--rosparam file="/home/yx/catkin_ws/src/simulation/config/moving_platform_control_param.yaml" command="load"/>
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/moving_platform" args="right_rear_velocity_controller left_rear_velocity_controller right_front_velocity_controller left_front_velocity_controller joint_state_controller"/-->
+
+
+
+</launch>

@@ -1,0 +1,55 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/yx/catkin_ws/devel/include/**",
+        "/home/yx/Prometheus/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/yx/catkin_ws/src/aruco_ros/aruco/include/**",
+        "/home/yx/catkin_ws/src/aruco_ros/aruco_ros/include/**",
+        "/home/yx/Prometheus/Modules/planning/FastPlanner/bspline_opt/include/**",
+        "/home/yx/catkin_ws/src/detector/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/planner/drone_detect/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/planner/plan_manage/include/**",
+        "/home/yx/Prometheus/Modules/mocap_ekf/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/mockamap/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/Utils/multi_map_server/include/**",
+        "/home/yx/Prometheus/Modules/planning/FastPlanner/path_searching/include/**",
+        "/home/yx/Prometheus/Modules/planning/FastPlanner/plan_env/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/Utils/pose_utils/include/**",
+        "/home/yx/Prometheus/Modules/control/include/**",
+        "/home/yx/Prometheus/Modules/deep_rl/include/**",
+        "/home/yx/Prometheus/Simulator/gazebo_simulator/include/**",
+        "/home/yx/Prometheus/Modules/planning/global_planning/include/**",
+        "/home/yx/Prometheus/Modules/planning/hybrid_astar/include/**",
+        "/home/yx/Prometheus/Modules/planning/local_planner/include/**",
+        "/home/yx/Prometheus/Modules/mission/include/**",
+        "/home/yx/Prometheus/Modules/planning/FastPlanner/plan_manage/include/**",
+        "/home/yx/Prometheus/Modules/planning/Utils/pose_utils/include/**",
+        "/home/yx/Prometheus/Modules/motion_planning/RapidQuad/include/**",
+        "/home/yx/Prometheus/Modules/ground_station/include/**",
+        "/home/yx/Prometheus/Modules/swarm_control/include/**",
+        "/home/yx/Prometheus/Modules/planning/swarm_planning/include/**",
+        "/home/yx/Prometheus/Modules/ugv_control/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/home/yx/catkin_ws/src/simulation/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/so3_control/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/home/yx/Prometheus/Modules/planning/FastPlanner/traj_utils/include/**",
+        "/home/yx/catkin_ws/src/uav_control/include/**",
+        "/home/yx/Prometheus/Modules/ego_planner/ego-planner-swarm/src/uav_simulator/Utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

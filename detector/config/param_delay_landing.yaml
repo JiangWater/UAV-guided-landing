@@ -1,0 +1,62 @@
+BasicParam:
+  control_method: 0 # 0-NMPC  1-LMPC
+  data_record: 1
+  land_flag: 1
+  delay_flag: 0
+
+NmpcParam:
+  Np: 20
+  Nc: 20
+
+  w_P_xy: 500 
+  w_P_z: 500
+  w_P_xy_sum: 2
+  w_P_z_sum: 10
+  w_V_xy: 5
+  w_V_z: 1
+  w_q: 140
+
+  w_P_xy_n: 800
+  w_P_z_n: 200
+  w_P_xy_sum_n: 0
+  w_P_z_sum_n: 0
+  w_V_xy_n: 10
+  w_V_z_n: 1
+  w_q_n: 200
+  
+  w_T: 3
+  w_omega_x: 10
+  w_omega_y: 10
+  w_omega_z: 10
+
+LmpcParam:
+  Np: 20
+  Nc: 20
+
+  w_P_xy: 100 
+  w_P_z: 100
+  w_P_xy_sum: 1
+  w_P_z_sum: 0
+  w_V_xy: 5
+  w_V_z: 1
+
+  w_P_xy_n: 200
+  w_P_z_n: 50
+  w_P_xy_sum_n: 0
+  w_P_z_sum_n: 0
+  w_V_xy_n: 10
+  w_V_z_n: 2
+
+  w_U_x: 2
+  w_U_y: 2
+  w_U_z: 1
+
+UAVParam:
+  mass: 1.52
+  arm_length: 0.225
+  hover_throttle: 0.466 # 0.47
+
+ControlParam:
+  target_z: 0.8
+  land_time1: 100
+  land_time2: 30

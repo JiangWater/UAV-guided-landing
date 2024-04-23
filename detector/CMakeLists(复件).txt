@@ -1,0 +1,36 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(detector)
+
+set(CMAKE_CXX_STANDARD 11)
+
+find_package(Eigen3 REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+  aruco_msgs
+  geometry_msgs
+  mavros
+  roscpp
+  tf
+  prometheus_msgs
+)
+
+add_compile_options(-std=c++11)
+
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES offboard
+#  CATKIN_DEPENDS geometry_msgs mavros roscpp
+#  DEPENDS system_lib
+)
+
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+
+#add_executable(detector_vel src/detector_vel.cpp src/Fuzzy_PID.cpp src/Incremental_PID.cpp)
+
+add_executable(simulation_detector src/simulation_detector.cpp src/mpc.cpp src/Fuzzy_PID.cpp)
+target_link_libraries(simulation_detector ${catkin_LIBRARIES} osqp OsqpEigen)
+#target_link_libraries(simulation_detector ${catkin_LIBRARIES} ipopt)
+
+

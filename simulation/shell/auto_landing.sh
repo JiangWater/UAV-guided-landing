@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source ~/.bashrc
+
+gnome-terminal --window -e 'bash -c "roslaunch simulation auto_landing.launch; exec bash"' \
+--tab -e 'bash -c "sleep 15; roslaunch aruco_ros single.launch; exec bash"' \
+--tab -e 'bash -c "sleep 15; rosrun image_view image_view image:=/aruco_single/result; exec bash"' \
+--tab -e 'bash -c "sleep 10; rosrun uav_control uav_auto_takeoff; exec bash"' \
+--tab -e 'bash -c "sleep 5; roslaunch detector simulation_detector_landing.launch;  exec bash"' 
+

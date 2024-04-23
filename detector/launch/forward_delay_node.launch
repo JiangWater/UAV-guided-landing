@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="detector" type="forward_delay_node" name="forward_delay_node" output="screen">
+  </node>
+</launch>

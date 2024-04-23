@@ -1,0 +1,15 @@
+material april_tag/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture april-tag.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
